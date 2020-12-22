@@ -2,6 +2,11 @@ package calcproj;
 
 import java.util.Scanner;
 
+import calcproj.operations.AddOperation;
+import calcproj.operations.DivideOperation;
+import calcproj.operations.MultiplyOperation;
+import calcproj.operations.SubtractOperation;
+
 public class InteractiveCalculator {
 
 	public static final void main(String[] args) {
@@ -18,13 +23,25 @@ public class InteractiveCalculator {
 		int result = 0;
 
 		if (operation.equals("add")) {
-
+			AddOperation add = new AddOperation();
+			add.setA(firstNumber);
+			add.setB(secondNumber);
+			result = add.getResult();
 		} else if (operation.equals("subtract")) {
-
+			SubtractOperation subtract = new SubtractOperation();
+			subtract.setA(firstNumber);
+			subtract.setB(secondNumber);
+			result = subtract.getResult();
 		} else if (operation.equals("multiply")) {
-
+			MultiplyOperation multiply = new MultiplyOperation();
+			multiply.setA(firstNumber);
+			multiply.setB(secondNumber);
+			result = multiply.getResult();
 		} else if (operation.equals("divide")) {
-
+			DivideOperation divide = new DivideOperation();
+			divide.setA(firstNumber);
+			divide.setB(secondNumber);
+			result = divide.getResult();
 		} else {
 			System.out.println("Invalid Operation");
 		}
