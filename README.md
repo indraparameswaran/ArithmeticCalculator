@@ -6,3 +6,4 @@ Core keyword of final was used with all the operation classes.
 Created a new repo in GIT HUB and thecode was pushed from the local repo.
 Realized to use 2 access modifiers, as public was already there in the code, added private with the input INT variable for all the operation classes.
 Added, committed and pushed the updated code to the GIT repo.
+Checked the below URL and it is working with the code in the master branch: https://github.com/indraparameswaran/ArithmeticCalculator.git
