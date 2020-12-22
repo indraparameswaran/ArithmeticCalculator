@@ -1,8 +1,8 @@
 package calcproj.operations;
 
 public final class DivideOperation {
-	int a = 0;
-	int b = 0;
+	private int a = 0;
+	private int b = 0;
 
 	public void setA(int a) {
 		this.a = a;
