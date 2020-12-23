@@ -12,8 +12,8 @@ public final class DivideOperation {
 		this.b = b;
 	}
 
-	public int getResult() {
-		return this.a / this.b;
+	public double getResult() {
+		return (double) this.a / this.b;
 	}
 
 }

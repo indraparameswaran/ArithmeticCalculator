@@ -21,6 +21,7 @@ public class InteractiveCalculator {
 		String operation = scanner.nextLine();
 
 		int result = 0;
+		double resultDouble = 0.0;
 
 		if (operation.equals("add")) {
 			AddOperation add = new AddOperation();
@@ -41,12 +42,16 @@ public class InteractiveCalculator {
 			DivideOperation divide = new DivideOperation();
 			divide.setA(firstNumber);
 			divide.setB(secondNumber);
-			result = divide.getResult();
+			resultDouble = divide.getResult();
 		} else {
 			System.out.println("Invalid Operation");
 		}
 
-		System.out.println("Result is: " + result);
+		if (operation.equals("divide")) {
+			System.out.println("Result is: " + resultDouble);
+		} else {
+			System.out.println("Result is: " + result);
+		}
 
 	}
 
